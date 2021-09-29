@@ -60,7 +60,7 @@ func isWin(jogo Game) bool {
 
 func validMoviments(game Game) []Game {
 	result := []Game{}
-
+	return result
 }
 func BFS(root *Node, initial *Game) *Node {
 	users = 0
@@ -82,7 +82,7 @@ func BFSconsume(queue []*Node) *Node {
 	printWorld(queue[0].value)
 
 	if isWin(queue[0].value) {
-		fmt.Println("Resultado encontrado em ", uses, " passos")
+		fmt.Println("Resultado encontrado em ", users, " passos")
 		result := queue[0]
 		return result
 	}
